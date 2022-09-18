@@ -1,0 +1,6 @@
+{
+    "device": "alsa_input.usb-Schiit_Audio_Schiit_Hel-00.analog-stereo",
+    "device-description": "Schiit Hel Analog Stereo",
+    "device-profile": "analog-input-mic",
+    "preset-name": "none"
+}
