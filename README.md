@@ -1,6 +1,6 @@
 
 # Nanocodebug's Pop!_OS setup notes
-- specifically for the Framework laptop, but these steps should apply to other Ubuntu based (and maybe Debain) distributions.
+- specifically for the Framework laptop, but these steps should apply to other Ubuntu based (and maybe Debian) distributions.
 - tested on the 22.04 LTS Pop!_OS release with a 12th gen 1260p Framework.
 
 # Power Management
@@ -28,7 +28,7 @@ not working afaik D:
     sudo apt install powertop
     sudo systemctl enable powertop
 
-Status of power saving functions viable in `sudo powertop`
+Status of power saving functions visable in `sudo powertop`
 
 ## Hibernate
 **[untested]** Not supported by default for pop os, but guide exists.
