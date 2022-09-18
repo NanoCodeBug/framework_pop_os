@@ -14,10 +14,10 @@ if [ "$1" == "enable" ]; then
 	echo "Setting cursor to medium..."
 	gsettings set org.gnome.desktop.interface cursor-size 32
 
-	echo "Disabling internal wifi..."
+	# echo "Disabling internal wifi..."
 	# i have a external wifi antenna for the office because the router is WEAK
 	# this is a lie the walls are just too thick
-	sudo ifconfig wlp166s0 down
+	# sudo ifconfig wlp166s0 down
 
 	echo "Done."
 elif [ "$1" == "disable" ]; then
@@ -33,9 +33,9 @@ elif [ "$1" == "disable" ]; then
 	echo "Setting cursor to large"
 	gsettings set org.gnome.desktop.interface cursor-size 48
 
-	echo "Enabling internal wifi..."
+	# echo "Enabling internal wifi..."
 	# bring back the internal wifi since its the only wifi device now
-	sudo ifconfig wlp166s0 up
+	# sudo ifconfig wlp166s0 up
 
 	echo "Done."
 else

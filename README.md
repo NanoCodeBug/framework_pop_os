@@ -66,7 +66,7 @@ flatpak install com.github.wwmm.easyeffects
 ```
 Default speaker and mic profiles are included in the easyeffects folder. 
 
-Speaker profile from here: 
+Speaker EQ profile from Lappy_McTopFace: https://community.frame.work/t/speakers-sound-quality/1078/34
 
 If you copy the entire config folder, it will should cuase the configs to only enable for the internal speakers and microphone, loading a empty profile for other audio or devices or headphones. 
 
