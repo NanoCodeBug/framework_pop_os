@@ -102,6 +102,7 @@ enable *real* smooth scrolling!
 ```
 echo export MOZ_USE_XINPUT2=1 | sudo tee /etc/profile.d/firefox_xinput2.sh
 ```
+personal scrolling perferences, will conflict with external click wheel mice 
 
 ```
 about:config
