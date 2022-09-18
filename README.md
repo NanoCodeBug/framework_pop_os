@@ -136,3 +136,10 @@ i think this is neat
 
 ## dock.sh
 personal script for enabling or disabling text scaling when using an external monitor, also does scroll wheel and wifi device management for my dock.
+
+## favorite diagnostic tools for narrowing down whatever problems show up
+- wavemon - see wifi card reception in realtime!
+- htop - the better top
+- bashtop - the better htop
+- sensors - install lm-sensors and run sensors-detect i beg you
+- powertop - see power draw and cpu wakeup info by source
