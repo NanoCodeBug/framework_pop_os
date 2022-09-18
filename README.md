@@ -40,9 +40,10 @@ Deep sleep (`s2idle[deep]`) is working in pop!_os.
 Using only usb-c cards I've recorded a suspend power draw of 0.8 watts.
 
 ### Disk
-TODO disk power saving, potential for further savings?
-- TODO: fstab noatime or relatime
-- TODO: sudo kernelstub -a "nvme.noacpi=1"
+- pop!_os appears to enable `noatime` on disks by default
+
+- `sudo kernelstub -a "nvme.noacpi=1"` can be used to prevent the NVME_QUIRK_SIMPLE_SUSPEND flag from being set. The quirk exists to cause the kernel to do pci link power management of the nvme device in some circumstances instead of allowing the nvme device to got into sleep states by itself. My testing with a SN850 showed no change in suspend power consumption. 
+
 - TODO: ssd firmware update
 
 ### USB
@@ -94,7 +95,6 @@ some sort of conflict in the bindings, fix by disabling this kernel module.
 sudo kernelstub -a "module_blacklist=hid_sensor_hub"
 ```
 
-
 # Personal Preferences
 ## Firefox
 
@@ -111,7 +111,6 @@ general.smoothScroll false
 mousewheel.default.delta_multiplier_y 40 
 ```
 
-
 ## Gnome Shell Extensions
 [Gnome Shell Extension Installer for Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
 
@@ -119,7 +118,6 @@ Extensions:
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - cpu, temperature, etc.
 - [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/) - easy switching from top bar dropdown
 - [Impatience](https://extensions.gnome.org/extension/277/impatience/) - the animations are toooo slow, make them faster 
-
 
 ## DisplayCal Notes
 - https://github.com/eoyilmaz/displaycal-py3
